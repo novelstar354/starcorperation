@@ -230,6 +230,66 @@
       font-size: 0.9rem;
       opacity: 0.6;
     }
+
+
+/*広告*/
+ .ad-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ad-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .ad-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .ad-section p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  .ad-button {
+    background-color: white;
+    color: #ff7e5f;
+    font-weight: bold;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .ad-button:hover {
+    background-color: #ffe0d1;
+    color: #ff5a36;
+  }
+
+  /* レスポンシブ対応 */
+  @media (min-width: 768px) {
+    .ad-section {
+      flex-direction: row;
+      text-align: left;
+      padding: 60px;
+    }
+
+    .ad-section div {
+      flex: 1;
+      margin: 0 20px;
+    }
+  }
   </style>
 </head>
     
@@ -422,6 +482,16 @@
   
   </section>
 
+<section class="ad-section",class="fade-in">
+  <div>
+    <h2>今だけ限定キャンペーン！ブラウザでいろんなゲームをプレイしよう！</h2>
+    <p>GAME HUB</p>
+    <a href="https://novelstar354.github.io/gamehub" class="ad-button">詳細を見る</a>
+  </div>
+  <div>
+    <img src="https://play-lh.googleusercontent.com/ZZuNL9nGkaqM9QH5MjqYJZXJtis_kbV70bjVx0HsXe7jLcJqPz2izczvFnXo4S6xCQ" alt="gamehub" style="border-radius:12px; width:100%; max-width:300px;">
+  </div>
+</section>
          
 <section id="password">
     <h3 class="fade-in">入社希望</h3>
